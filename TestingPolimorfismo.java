@@ -16,11 +16,12 @@ public class TestingPolimorfismo {
         circulo1.setArea(a);
         System.out.println("info de circulo1: " + circulo1.toString());
 
-        Triangulo triangulo1 = new Triangulo("triangulo",34.67,44.12);
-        double = triangulo1.getArea(a);
-        triangulo1.setArea(b);
-        double = triangulo1.getPerimetro(b);
-        triangulo1.setPerimetro(a);
-        System.out.println("info de trinagulo1: " + triangulo1.toString());
+
+        Triangulo triangulo1 = new Triangulo("Triangulo", 34.67, 44.12);
+        double areaTriangulo = triangulo1.getArea();
+        triangulo1.setArea(areaTriangulo);
+        double perimetroTriangulo = triangulo1.getPerimetro();
+        triangulo1.setPerimetro(perimetroTriangulo);
+        System.out.println("info de triangulo1: " + triangulo1.toString());
     }
 }
